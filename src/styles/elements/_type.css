@@ -1,0 +1,6 @@
+* {
+    font-family: var(--font-family-text-regular);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    font-size: var(--font-size-normal);
+}

@@ -1,0 +1,23 @@
+:root {
+    --font-family-text-regular: 'PoppinsRegular', sans-serif;
+    --font-family-text-light: 'Poppinslight', sans-serif;
+    --font-family-text-medium: 'PoppinsMedium', sans-serif;
+    
+    --font-size-xxxl: calc(var(--font-size-normal) * 3.052);
+    --font-size-xxl: calc(var(--font-size-normal) * 2.441);
+    --font-size-xl: calc(var(--font-size-normal) * 1.953);
+    --font-size-l: calc(var(--font-size-normal) * 1.563);
+    --font-size-m: calc(var(--font-size-normal) * 1.25);
+    --font-size-normal: 1rem;
+    --font-size-s: calc(var(--font-size-normal) * 0.8);
+    --font-size-s: calc(var(--font-size-normal) * 0.64);
+
+
+    --font-weight-normal: 400;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.4;
+    --line-height-relaxed: 1.6;
+}

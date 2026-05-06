@@ -1,0 +1,12 @@
+:root {
+    --color-bg: #fefefe;
+    --color-sidebar: #fafafd;
+
+    --color-border: #ebe9e9;
+    
+    --color-primary: #005dff;
+    --color-primary-o-10: color-mix(in srgb, var(--color-primary), transparent 90%);
+    --color-primary-dark: #0243b2;
+
+    --color-font: #030514;
+}

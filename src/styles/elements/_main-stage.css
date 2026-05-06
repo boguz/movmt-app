@@ -1,0 +1,4 @@
+.main-stage {
+  flex: 1;
+  background: var(--color-bg);
+}

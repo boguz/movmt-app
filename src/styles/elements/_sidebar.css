@@ -1,0 +1,18 @@
+.sidebar {
+    --sidebar-logo-width: 160px;
+    
+    width: var(--sidebar-width);
+    background: var(--color-sidebar);
+    padding: var(--spacing-normal);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    gap: var(--spacing-l);
+    border-right: 1px solid var(--color-border);
+}
+
+.sidebar__logo {
+    display: block;
+    width: var(--sidebar-logo-width);
+    height: auto;
+}

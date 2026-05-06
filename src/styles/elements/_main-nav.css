@@ -1,0 +1,68 @@
+.main-nav {
+    --main-nav-item-icon-size: var(--font-size-m);
+    --main-nav-item-bg-color: var(--color-sidebar);
+    --main-nav-item-bg-color-active: var(--color-primary-o-10);
+    --main-nav-item-title-color: var(--color-font);
+    --main-nav-item-title-color-active: var(--color-primary);
+}
+
+.main-nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+
+}
+
+.main-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--spacing-s);
+    text-decoration: none;
+    padding: calc(var(--spacing-s) + var(--spacing-xs)) var(--spacing-s);
+    border-radius: var(--border-radius-normal);
+}
+
+.main-nav__link:is(:hover, :focus-visible) {
+    background-color: var(--main-nav-item-bg-color-active);
+}
+
+.main-nav__link[aria-current="page"] {
+    background-color: var(--main-nav-item-bg-color-active);
+    pointer-events: none;
+}
+
+.main-nav__icon {
+    display: block;
+    height: var(--main-nav-item-icon-size);
+    width: var(--main-nav-item-icon-size);
+    background-color: var(--color-primary);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: var(--main-nav-item-icon);
+}
+
+.main-nav__icon--home {
+    --main-nav-item-icon: var(--icon-home);
+}
+
+.main-nav__icon--settings {
+    --main-nav-item-icon: var(--icon-settings);
+}
+
+.main-nav__icon--exercises {
+    --main-nav-item-icon: var(--icon-exercises);
+}
+
+.main-nav__title {
+    font-family: var(--font-family-text-medium);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-normal);
+    color: var(--main-nav-item-title-color);
+}
+
+.main-nav__link[aria-current="page"] .main-nav__title {
+    color: var(--main-nav-item-title-color-active);
+}
