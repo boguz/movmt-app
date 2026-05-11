@@ -1,9 +1,16 @@
 import './styles/main.css';
-import { Layout } from './components/Layout';
+
+import './components/app-layout';
+
 import { initRouter } from './router/router';
 
-const app = document.querySelector('#app')!;
+const app = document.querySelector('#app');
 
-app.appendChild(Layout());
+if (app) {
+  app.innerHTML = `
+    <app-layout></app-layout>
+  `;
+}
 
+// 👇 initialize routing/store sync
 initRouter();
