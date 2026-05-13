@@ -12,7 +12,7 @@ export class AppLayout extends LitElement {
     return html`
       <div class="layout">
         <app-sidebar></app-sidebar>
-        <app-stage></app-stage>
+        <app-stage class="stage"></app-stage>
       </div>
     `;
   }

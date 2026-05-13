@@ -3,6 +3,7 @@ import { LitElement, html, nothing } from 'lit';
 import { appStore } from '../store/app-store';
 
 import type { Route } from '../router/router';
+import './streak-card';
 
 export class AppSidebar extends LitElement {
   private currentRoute: Route = 'home';
@@ -78,9 +79,7 @@ export class AppSidebar extends LitElement {
           </ul>
         </nav>
 
-        <article class="streak-card">
-          Streak Card
-        </article>
+        <streak-card class="streak-card"></streak-card>
       </aside>
 `;
 }

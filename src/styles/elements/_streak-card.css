@@ -1,0 +1,47 @@
+.streak-card {
+    --streak-card-bg-color: var(--color-light-yellow);
+
+    width: 100%;
+    height: auto;
+    background-color: var(--streak-card-bg-color);
+    border-radius: var(--border-radius-normal);
+    padding: var(--spacing-normal);
+}
+
+.streak-card__days {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0 var(--spacing-s);
+    margin-bottom: var(--spacing-normal);
+}
+
+.streak-card__icon {
+    font-size: var(--font-size-xl);
+}
+
+.streak-card__days-count {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-family-text-medium);
+    color: var(--color-font-light);
+}
+
+.streak-card__days-description {
+    grid-column: 1 / -1;
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-normal);
+    color: var(--color-font-light);
+}
+
+.streak-card__message {
+    font-family: var(--font-family-text-regular);
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--spacing-normal);
+    color: var(--color-font-light);
+}
+
+.streak-card__illustration {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
