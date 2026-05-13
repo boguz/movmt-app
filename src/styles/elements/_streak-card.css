@@ -21,13 +21,15 @@
 
 .streak-card__days-count {
     font-size: var(--font-size-xl);
-    font-family: var(--font-family-text-medium);
+    font-family: var(--font-family-text-bold);
+    font-weight: var(--font-weight-bold);
     color: var(--color-font-light);
 }
 
 .streak-card__days-description {
     grid-column: 1 / -1;
     font-family: var(--font-family-text-medium);
+    font-weight: var(--font-weight-medium);
     font-size: var(--font-size-normal);
     color: var(--color-font-light);
 }

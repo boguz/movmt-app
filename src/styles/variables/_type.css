@@ -2,6 +2,7 @@
     --font-family-text-regular: 'PoppinsRegular', sans-serif;
     --font-family-text-light: 'Poppinslight', sans-serif;
     --font-family-text-medium: 'PoppinsMedium', sans-serif;
+    --font-family-text-bold: 'PoppinsBold', sans-serif;
     
     --font-size-xxxl: calc(var(--font-size-normal) * 3.052);
     --font-size-xxl: calc(var(--font-size-normal) * 2.441);
@@ -15,7 +16,8 @@
 
     --font-weight-normal: 400;
     --font-weight-light: 300;
-    --font-weight-medium: 500;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
 
     --line-height-tight: 1.2;
     --line-height-normal: 1.4;
