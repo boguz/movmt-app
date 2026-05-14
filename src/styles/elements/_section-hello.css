@@ -1,0 +1,17 @@
+.section-hello {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-hello__headline {
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-xxl);
+}
+
+.section-hello__headline-icon {
+    font-size: var(--font-size-xxl);
+}
+
+.section-hello__{
+    color: var(--color-font-light);
+}

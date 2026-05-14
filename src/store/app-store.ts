@@ -6,7 +6,7 @@ export const appStore = new Store<AppState>({
     route: 'home',
 
     user: {
-        name: null,
+        name: 'Luis',
     },
 
     streak: 0,
