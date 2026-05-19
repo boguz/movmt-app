@@ -1,5 +1,7 @@
 import { LitElement, html } from "lit";
 import '../components/section-hello';
+import '../components/next-break-card';
+import '../components/quick-actions';
 
 import { appStore } from '../store/app-store';
 
@@ -31,6 +33,8 @@ export class HomeView extends LitElement {
 	render() {
 		return html`
             <section-hello user-name="${this.userName}"></section-hello>
+            <next-break-card></next-break-card>
+            <quick-actions></quick-actions>
 		`;
 	}
 }

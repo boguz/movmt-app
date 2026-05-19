@@ -4,6 +4,7 @@
     --font-family-text-medium: 'PoppinsMedium', sans-serif;
     --font-family-text-bold: 'PoppinsBold', sans-serif;
     
+    --font-size-xxxxl: calc(var(--font-size-normal) * 4);
     --font-size-xxxl: calc(var(--font-size-normal) * 3.052);
     --font-size-xxl: calc(var(--font-size-normal) * 2.441);
     --font-size-xl: calc(var(--font-size-normal) * 1.953);

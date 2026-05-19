@@ -3,13 +3,15 @@ import { Store } from './store';
 import type { AppState } from './app-state';
 
 export const appStore = new Store<AppState>({
-    route: 'home',
+  route: {
+    name: 'home',
+  },
 
-    user: {
-        name: 'Luis',
-    },
+  user: {
+    name: 'Luis',
+  },
 
-    streak: 0,
+  streak: 0,
 
-    darkMode: false,
+  darkMode: false,
 });

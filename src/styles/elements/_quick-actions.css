@@ -1,0 +1,16 @@
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-normal);
+}
+
+.quick-actions__headline {
+    font-size: var(--font-size-l);
+    font-family: var(--font-family-text-medium);
+}
+
+.quick-actions__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-normal);
+}

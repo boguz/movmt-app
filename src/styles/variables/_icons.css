@@ -1,4 +1,5 @@
 :root {
+    --icon-arrow-right: url('/public/icons/arrow-right.svg');
     --icon-exercises: url('/public/icons/exercises.svg');
     --icon-home: url('/public/icons/home.svg');
     --icon-settings: url('/public/icons/settings.svg');

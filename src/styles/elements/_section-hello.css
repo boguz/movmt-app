@@ -1,4 +1,4 @@
-.section-hello {
+.section-hello__section {
     display: flex;
     flex-direction: column;
 }

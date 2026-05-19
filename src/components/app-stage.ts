@@ -5,11 +5,13 @@ import { appStore } from '../store/app-store';
 import '../views/home-view';
 import '../views/exercises-view';
 import '../views/settings-view';
+import '../views/tests-view';
+import '../views/workout-view';
 
 import type { Route } from '../router/router';
 
 export class AppStage extends LitElement {
-  private route: Route = 'home';
+  private route: Route;
 
   private unsubscribe?: () => void;
 
@@ -34,25 +36,35 @@ export class AppStage extends LitElement {
   }
 
   private renderView() {
-    switch (this.route) {
+    switch (this.route.name) {
       case 'home':
         return html`
-          <home-view></home-view>
+          <home-view class="view"></home-view>
         `;
 
       case 'exercises':
         return html`
-          <exercises-view></exercises-view>
+          <exercises-view class="view"></exercises-view>
         `;
 
       case 'settings':
         return html`
-          <settings-view></settings-view>
+          <settings-view class="view"></settings-view>
+        `;
+
+    case 'tests':
+        return html`
+          <tests-view class="view"></tests-view>
+        `;
+
+    case 'workout':
+        return html`
+          <workout-view class="view"></workout-view>
         `;
 
       default:
         return html`
-          <home-view></home-view>
+          <home-view class="view"></home-view>
         `;
     }
   }

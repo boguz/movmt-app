@@ -18,7 +18,11 @@
 @import url("./elements/_layout.css");
 @import url("./elements/_main-nav.css");
 @import url("./elements/_main-stage.css");
+@import url("./elements/_next-break-card.css");
+@import url("./elements/_quick-action-card.css");
+@import url("./elements/_quick-actions.css");
 @import url("./elements/_section-hello.css");
 @import url("./elements/_sidebar.css");
 @import url("./elements/_streak-card.css");
 @import url("./elements/_type.css");
+@import url("./elements/_view.css");

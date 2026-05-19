@@ -1,28 +1,71 @@
-import { appStore } from '../store/app-store';
+import { appStore } from "../store/app-store";
 
-export const ROUTES = ['home', 'exercises', 'settings'] as const;
+export type RouteName =
+	| "home"
+	| "exercises"
+	| "workouts"
+	| "workout"
+	| "settings"
+	| "tests";
 
-export type Route = typeof ROUTES[number];
+export type Route = {
+	name: RouteName;
+
+	params?: Record<string, string>;
+};
 
 export function getRoute(): Route {
-  const hash = location.hash.replace('#', '') as Route;
+	const hash = location.hash.replace("#", "");
 
-  if (!hash || !ROUTES.includes(hash)) {
-    return 'home';
-  }
+	const path = hash || "/home";
 
-  return hash;
+	/*
+	 * /workouts/quick-reset
+	 */
+	const workoutMatch = path.match(/^\/workouts\/(.+)$/);
+
+	if (workoutMatch) {
+		return {
+			name: "workout",
+
+			params: {
+				id: workoutMatch[1],
+			},
+		};
+	}
+
+	/*
+	 * Static routes
+	 */
+	switch (path) {
+		case "/home":
+			return { name: "home" };
+
+		case "/exercises":
+			return { name: "exercises" };
+
+		case "/workouts":
+			return { name: "workouts" };
+
+		case "/settings":
+			return { name: "settings" };
+
+		case "/tests":
+			return { name: "tests" };
+
+		default:
+			return { name: "home" };
+	}
 }
 
 export function initRouter(): void {
-    console.log('initing initRouter.apply.apply')
-  function syncRoute(): void {
-    appStore.setState({
-      route: getRoute(),
-    });
-  }
+	function syncRoute(): void {
+		appStore.setState({
+			route: getRoute(),
+		});
+	}
 
-  window.addEventListener('hashchange', syncRoute);
+	window.addEventListener("hashchange", syncRoute);
 
-  syncRoute();
+	syncRoute();
 }

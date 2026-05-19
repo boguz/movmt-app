@@ -1,0 +1,101 @@
+.quick-action-card {
+    --quick-action-card-bg-color: var(--color-primary-o-10);
+    --quick-action-card-illustration-size: 5rem;
+    --quick-action-card-cta-size: 2rem;
+    --quick-action-card-cta-icon-size: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quick-action-card-bg-color);
+    border-radius: var(--border-radius-normal);
+    padding: var(--spacing-normal);
+    border: 1px solid var(--color-primary-o-10);
+}
+
+.quick-action-card[data-workout-type="stretch"] {
+    --quick-action-card-bg-color: var(--color-green-light);
+    --quick-action-card-accent-color: var(--color-green-dark);
+}
+
+.quick-action-card[data-workout-type="breathing"] {
+    --quick-action-card-bg-color: var(--color-blue-light);
+    --quick-action-card-accent-color: var(--color-blue-dark);
+}
+
+.quick-action-card[data-workout-type="eyes"] {
+    --quick-action-card-bg-color: var(--color-teal-light);
+    --quick-action-card-accent-color: var(--color-teal-dark);
+}
+
+.quick-action-card[data-workout-type="strength"] {
+    --quick-action-card-bg-color: var(--color-red-light);
+    --quick-action-card-accent-color: var(--color-red-dark);
+}
+
+.quick-action-card[data-workout-type="mobility"] {
+    --quick-action-card-bg-color: var(--color-yellow-light);
+    --quick-action-card-accent-color: var(--color-yellow-dark);
+}
+
+.quick-action-card[data-workout-type="relax"] {
+    --quick-action-card-bg-color: var(--color-purple-light);
+    --quick-action-card-accent-color: var(--color-purple-dark);
+}
+
+.quick-action-card[data-workout-type="energy"] {
+    --quick-action-card-bg-color: var(--color-orange-light);
+    --quick-action-card-accent-color: var(--color-orange-dark);
+}
+
+.quick-action-card__illustration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-normal);
+}
+
+.quick-action-card__illustration {
+    height: var(--quick-action-card-illustration-size);
+    width: var(--quick-action-card-illustration-size);
+    object-fit: contain;
+}
+
+.quick-action-card__title {
+    font-family: var(--font-family-text-medium);
+    color: var(--color-font);
+    font-size: var(--font-size-m);
+}
+
+.quick-action-card__duration {
+    font-family: var(--font-family-text-light);
+    color: var(--color-font-light);
+}
+
+.quick-action-card__cta {
+    margin: var(--spacing-s) 0 0 auto;
+    display: block;
+    height: var(--quick-action-card-cta-size);
+    width: var(--quick-action-card-cta-size);
+    border: 1px solid var(--quick-action-card-accent-color);
+    border-radius: 50%;
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-action-card__cta:is(:hover, :focus-visible) {
+    opacity: 100%;
+}
+
+.quick-action-card__cta::after {
+    content: "";
+    display: block;
+    height: var(--quick-action-card-cta-icon-size);
+    width: var(--quick-action-card-cta-icon-size);
+    background-color: var(--quick-action-card-accent-color);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-image: var(--icon-arrow-right);
+}

@@ -1,15 +1,48 @@
 :root {
     --color-bg: #fefefe;
-    --color-sidebar: #fafafd;
+    --color-sidebar: #fafafa;
 
-    --color-border: #ebe9e9;
+    --color-border: #eceff1;
     
     --color-primary: #005dff;
+    --color-primary: #7200ff;
     --color-primary-o-10: color-mix(in srgb, var(--color-primary), transparent 90%);
     --color-primary-dark: #0243b2;
+    --color-primary-dark: #5001a0;
 
     --color-font: #3f4153;
     --color-font-light: #535662;
 
     --color-light-yellow: #fef1d0;
+    --color-light-purple: #f9f2ff;
+
+
+
+    --color-blue-primary: #1976D2;
+    --color-blue-light: #E3F2FD;
+    --color-blue-dark: #0D47A1;
+
+    --color-teal-primary: #009688;
+    --color-teal-light: #E0F2F1;
+    --color-teal-dark: #004D40;
+
+    --color-green-primary: #8BC34A;
+    --color-green-light: #F1F8E9;
+    --color-green-dark: #33691E;
+
+    --color-purple-primary: #9C27B0;
+    --color-purple-light: #F3E5F5;
+    --color-purple-dark: #4A148C;
+
+    --color-yellow-primary: #FFEB3B;
+    --color-yellow-light: #FFFDE7;
+    --color-yellow-dark: #F57F17;
+
+    --color-orange-primary: #FF9800;
+    --color-orange-light: #FFF3E0;
+    --color-orange-dark: #E65100;
+
+    --color-red-primary: #F44336;
+    --color-red-light: #FFEBEE;
+    --color-red-dark: #B71C1C;
 }
