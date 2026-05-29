@@ -1,13 +1,17 @@
-import type { Route } from '../router/router';
+import type { Route } from "../router/router";
+
+export interface User {
+	username: string;
+}
 
 export interface AppState {
-    route: Route;
+	route: Route;
 
-    user: {
-        name: string | null;
-    };
+	currentUser: User | null;
 
-    streak: number;
+	users: User[];
 
-    darkMode: boolean;
+	darkMode: boolean;
+
+	streak: number;
 }

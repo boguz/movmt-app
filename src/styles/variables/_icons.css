@@ -1,6 +1,9 @@
 :root {
     --icon-arrow-right: url('/public/icons/arrow-right.svg');
+    --icon-clock: url('/public/icons/clock.svg');
     --icon-exercises: url('/public/icons/exercises.svg');
     --icon-home: url('/public/icons/home.svg');
+    --icon-logout: url('/public/icons/logout.svg');
     --icon-settings: url('/public/icons/settings.svg');
+    --icon-yoga: url('/public/icons/yoga.svg');
 }

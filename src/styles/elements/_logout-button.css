@@ -1,0 +1,37 @@
+.logout-button {
+    --logout-button-icon-size: var(--font-size-m);
+    --logout-button-color: var(--color-font);
+    --logout-button-bg-color: transparent;
+    
+    display: flex;
+    gap: var(--spacing-s);
+    align-items: center;
+    justify-content: start;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: var(--logout-button-bg-color);
+    padding: calc(var(--spacing-s) + var(--spacing-xs)) var(--spacing-s);
+    border-radius: var(--border-radius-normal);
+}
+
+.logout-button:is(:hover, :focus-visible) {
+    --logout-button-color: var(--color-primary);
+    --logout-button-bg-color: var(--color-primary-o-10);
+}
+
+.logout-button__icon {
+    display: block;
+    height: var(--logout-button-icon-size);
+    width: var(--logout-button-icon-size);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: var(--icon-logout);
+    background-color: var(--logout-button-color);
+}
+
+.logout-button__text {
+    color: var(--logout-button-color);
+    font-family: var(--font-family-text-medium);
+}

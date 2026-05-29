@@ -4,3 +4,8 @@
     line-height: var(--line-height-normal);
     font-size: var(--font-size-normal);
 }
+
+h1 {
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-xxl);
+}

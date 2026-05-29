@@ -3,6 +3,7 @@ import { LitElement, html, nothing } from "lit";
 import { appStore } from "../store/app-store";
 
 import type { Route } from "../router/router";
+import { logout } from '../store/actions';
 import "./streak-card";
 
 export class AppSidebar extends LitElement {
@@ -59,11 +60,11 @@ export class AppSidebar extends LitElement {
 
 						<li class="main-nav__item">
 							<a
-								href="#/exercises"
+								href="#/workouts"
 								class="main-nav__link"
-								aria-current=${this.isActive("exercises") ? "page" : nothing}
+								aria-current=${this.isActive("workouts") ? "page" : nothing}
 							>
-								<span class="main-nav__title">Guided Exercises</span>
+								<span class="main-nav__title">Workouts</span>
 							</a>
 						</li>
 
@@ -90,6 +91,11 @@ export class AppSidebar extends LitElement {
 				</nav>
 
 				<streak-card class="streak-card"></streak-card>
+
+                <button class="logout-button" @click="${logout}">
+                    <span class="logout-button__icon" aria-hidden="true"></span>
+                    <span class="logout-button__text">Logout</span>
+                </button>
 			</aside>
 		`;
 	}

@@ -11,8 +11,8 @@
     --font-size-l: calc(var(--font-size-normal) * 1.563);
     --font-size-m: calc(var(--font-size-normal) * 1.25);
     --font-size-normal: 1rem;
-    --font-size-s: calc(var(--font-size-normal) * 0.8);
-    --font-size-s: calc(var(--font-size-normal) * 0.64);
+    --font-size-s: calc(var(--font-size-normal) * 0.875);
+    --font-size-xs: calc(var(--font-size-normal) * 0.64);
 
 
     --font-weight-normal: 400;

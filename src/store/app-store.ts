@@ -1,17 +1,34 @@
-import { Store } from './store';
+import { Store } from "./store";
 
-import type { AppState } from './app-state';
+import type { AppState } from "./app-state";
 
-export const appStore = new Store<AppState>({
-  route: {
-    name: 'home',
-  },
+const STORAGE_KEY = "movmt-app";
 
-  user: {
-    name: 'Luis',
-  },
+function loadState(): AppState {
+	const saved = localStorage.getItem(STORAGE_KEY);
 
-  streak: 0,
+	if (saved) {
+		return JSON.parse(saved);
+	}
 
-  darkMode: false,
+	return {
+		route: {
+			name: "home",
+		},
+
+		currentUser: null,
+
+		users: [],
+
+		darkMode: false,
+
+		streak: 0,
+	};
+}
+
+export const appStore = new Store<AppState>(loadState());
+
+// persist automatically
+appStore.subscribe((state) => {
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 });

@@ -1,5 +1,12 @@
 .layout {
-  display: grid;
-  grid-template-columns: var(--sidebar-width) 1fr;
-  height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+    background-color: var(--color-bg);
+}
+
+.layout:has(app-sidebar) {
+    grid-template-columns: var(--sidebar-width) 1fr;
 }

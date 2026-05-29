@@ -4,14 +4,14 @@
 
     --color-border: #eceff1;
     
-    --color-primary: #005dff;
     --color-primary: #7200ff;
     --color-primary-o-10: color-mix(in srgb, var(--color-primary), transparent 90%);
-    --color-primary-dark: #0243b2;
     --color-primary-dark: #5001a0;
+    
+    --gradient-primary: linear-gradient(144deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
 
     --color-font: #3f4153;
-    --color-font-light: #535662;
+    --color-font-light: #696c78;
 
     --color-light-yellow: #fef1d0;
     --color-light-purple: #f9f2ff;

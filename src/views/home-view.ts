@@ -18,7 +18,7 @@ export class HomeView extends LitElement {
 		super.connectedCallback();
 
 		this.unsubscribe = appStore.subscribe((state) => {
-			this.userName = state.user.name;
+			this.userName = state.currentUser?.username ?? null;
 
 			this.requestUpdate();
 		});
