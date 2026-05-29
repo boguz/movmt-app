@@ -54,6 +54,7 @@ export class AppSidebar extends LitElement {
 								class="main-nav__link"
 								aria-current=${this.isActive("home") ? "page" : nothing}
 							>
+                                <span class="main-nav__icon main-nav__icon--home" aria-hidden="true"></span>
 								<span class="main-nav__title">Home</span>
 							</a>
 						</li>
@@ -64,6 +65,7 @@ export class AppSidebar extends LitElement {
 								class="main-nav__link"
 								aria-current=${this.isActive("workouts") ? "page" : nothing}
 							>
+                                <span class="main-nav__icon main-nav__icon--workouts" aria-hidden="true"></span>
 								<span class="main-nav__title">Workouts</span>
 							</a>
 						</li>
@@ -74,6 +76,7 @@ export class AppSidebar extends LitElement {
 								class="main-nav__link"
 								aria-current=${this.isActive("settings") ? "page" : nothing}
 							>
+                                <span class="main-nav__icon main-nav__icon--settings" aria-hidden="true"></span>
 								<span class="main-nav__title">Settings</span>
 							</a>
 						</li>
@@ -84,6 +87,7 @@ export class AppSidebar extends LitElement {
 								class="main-nav__link"
 								aria-current=${this.isActive("tests") ? "page" : nothing}
 							>
+                                <span class="main-nav__icon main-nav__icon--settings" aria-hidden="true"></span>
 								<span class="main-nav__title">Tests</span>
 							</a>
 						</li>
